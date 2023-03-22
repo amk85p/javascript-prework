@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Kamień, papier, nożyce</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Ibarra+Real+Nova:ital@1&family=Inter:wght@400;500;700&family=Montserrat:wght@500&family=Nanum+Gothic&family=Old+Standard+TT&family=Open+Sans&family=Playfair+Display:ital,wght@1,500&family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+    >
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sass/style.scss">
   </head>
   <body>
-    <div class="container">
-      <div id="buttons"></div>
-      <div id="messages"></div>
+    <div class="bigbox">
+      <div class="text">
+        <h1>Gra Papier, Kamień, Nożyce</h1>
+        <div class="rules">
+          <h2>Zasady</h2>
+          <ol>
+            <li>Gra składa się z kolejnych tur.</li>
+            <li>Gracz, który wybrał silniejszy symbol, wygrywa</li>
+            <li>
+              W przypadku pokazania dwóch takich samych symboli następuje remis
+              – punktu brak.
+            </li>
+          </ol>
+          <div class="link">
+            <a
+              href="https://pl.wikipedia.org/wiki/Papier,_kamień,_nożyce"
+              target="_blank"
+            >
+              <i class="fa-solid fa-circle-info"></i>
+              Sprawdż zasady gry
+            </a>
+          </div>
+        </div>
+        <h2>Hierarchia symboli:</h2>
+        <p>
+          <i class="fa-solid fa-scissors"></i>
+          nożyce są silniejsze od
+          <i class="fa-solid fa-toilet-paper"></i>
+          papieru, ponieważ go tną,
+          <br>
+          <i class="fa-solid fa-gem"></i>
+          kamień jest silniejszy od
+          <i class="fa-solid fa-scissors"></i>
+          nożyc, ponieważ je tępi,
+          <br>
+          <i class="fa-solid fa-toilet-paper"></i>
+          papier jest silniejszy od
+          <i class="fa-solid fa-gem"></i>
+          kamienia, ponieważ go owija.
+          <br>
+        </p>
+        <h2>wybierz opcję</h2>
+      </div>
+      <div class="container">
+        <div id="buttons">
+          <button type="button" id="buttonRock">
+            <i class="fa-solid fa-gem"></i>
+            kamień
+          </button>
+          <button type="button" id="buttonPaper">
+            <i class="fa-solid fa-toilet-paper"></i>
+            papier
+          </button>
+          <button type="button" id="buttonScisors">
+            <i class="fa-solid fa-scissors"></i>
+            nożyczki
+          </button>
+        </div>
+        <div id="messages">Zagrajmy!!:)</div>
+      </div>
     </div>
     <script src="js/functions.js"></script>
     <script src="js/script.js"></script>
